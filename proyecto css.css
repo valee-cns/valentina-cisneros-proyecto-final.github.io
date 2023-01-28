@@ -1,0 +1,524 @@
+/** Diseño general de la página */
+*{
+    font-family: 'Rokkitt', serif;
+    background: #B0FFEC;
+}
+
+/** Diseño de la barra de navegación */
+
+.barra-nav{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-right: 30px;
+    background: #287699;
+    padding-top: 18px;
+}
+
+.barra-nav li{
+    text-transform: uppercase;
+    background: #287699
+}
+
+.barra-nav li a{
+    padding: 7px 11px;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    background: #FFA196;
+    color: black;
+    font-weight: bold;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    outline: none;
+    border-style: dotted;
+    border-color: #FF758A;
+}
+
+.barra-nav li a:hover{
+    background: #D5758A;
+}
+
+.barra-nav li a:active{
+    background: #B3758A;
+}
+
+.menu-nav{
+    background: #287699;
+    height: 75px;
+    width: 100vw;
+    margin: auto;
+    align-items: center;
+    border-bottom: 1px solid #1d526b;
+    box-shadow: 5px 0 10px black;
+}
+
+/** Diseño de botones */
+
+.boton-menu{
+    padding: 5px 11px;
+    text-decoration: none;
+    font-size: 18px;
+    background: #FFA196;
+    color: black;
+    font-weight: bold;
+    height: auto;
+    width: 100vw;
+    outline: none;
+    border: none;
+    display: none;
+}
+
+.boton-menu:hover{
+    background: #D5758A;
+}
+
+.boton-menu:active{
+    background: #B3758A;
+}
+
+.ver-menos{
+    padding: 5px 11px;
+    text-decoration: none;
+    font-size: 18px;
+    background: #FFA196;
+    border-style: dotted;
+    border-color: #FF758A;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    height: auto;
+    width: auto;
+}
+
+.ver-menos:hover{
+    background: #D5758A;
+}
+
+.ver-menos:active{
+    background: #B3758A;
+}
+
+.info-sobre-mi{
+    display: none;
+}
+
+.mostrar{
+    display: block;
+}
+
+ul.show{
+    top: 65px;
+}
+
+/** Diseño de Información personal */
+
+.titulo-personal{
+    text-align: center;
+    border-width: 4px;
+    border-style: dashed;
+    border-color: #FF758A;
+    width: 300px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.imagen{
+    width: 350px;
+    height: 370px;
+    float: left;
+    padding-left: 5px;
+    padding-right: 25px;
+    
+}
+
+.datos-personales{
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: bold;
+    color: #FF758A;
+    text-decoration: underline;
+}
+
+.datos-info{
+    font-size: xx-large;
+}
+
+.con{
+    list-style-position: inside;
+}
+
+.contacto{
+    padding-left: 10px;
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: bold;
+    color: #FF758A;
+    text-decoration: underline;
+}
+
+.contacto-info{
+    font-size: xx-large;
+}
+
+.contacto-linkedin{
+    font-size: xx-large;
+    color: blue;
+    cursor: pointer;
+}
+
+.contacto-linkedin:hover{
+    color: rgb(0, 0, 97);
+}
+
+
+/** Diseño de "sobre mi" */
+
+.titulo-sobre-mi{
+    background: #FFA196;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: dotted;
+    border-color: #FF758A;
+    width: 150px;
+    height: 35px;
+}
+
+.titulo-sobre-mi:hover{
+    background: #D5758A;
+}
+
+.titulo-sobre-mi:active{
+    background: #B3758A;
+}
+
+.sobre-mi{
+    font-size: larger;
+    margin-right: 300px;
+    margin-left: 10px;
+    border: #FF758A;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 5px;
+    padding: 2px;
+}
+
+/** Diseño de Eperiencia Laboral */
+
+.titulo-experiencia{
+    text-align: center;
+    border-width: 4px;
+    border-style: dashed;
+    border-color: #FF758A;
+    width: 300px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.exp-col1{
+    display: inline-block;
+    margin: 15px 0px;
+    padding: 0;
+}
+
+.exp-col2{
+    padding: 0;
+    display: inline-block;
+    margin: 15px 10px;
+}
+
+.puesto{
+    font-size: x-large;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: #FF758A;
+}
+
+.lugar{
+    font-size: larger;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.tareas{
+    font-size: large;
+}
+
+/** Diseño de Formación Académica*/
+
+.titulo-formacion{
+    text-align: center;
+    border-width: 4px;
+    border-style: dashed;
+    border-color: #FF758A;
+    width: 310px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.for-col1{
+    display: inline-table;
+    margin-top: 0;
+    margin: 15px 0px;
+    padding: 0;
+    margin-top: 1px;
+    width: 380px;
+}
+
+.for-col2{
+    display: inline-table;
+    margin-top: 0;
+    margin: 15px 0px;
+    padding: 0;
+    width: 360px;
+}
+
+.for-col3{
+    display: inline-table;
+    margin-top: 0;
+    margin: 15px 0px;
+    padding: 0;
+    width: 500px;
+}
+
+
+/** Diseño de habilidades */
+
+.titulo-habilidades{
+    text-align: center;
+    border-width: 4px;
+    border-style: dashed;
+    border-color: #FF758A;
+    width: 200px;
+    height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hab{
+    text-align: justify;
+    list-style-position: inside;
+    margin-bottom: 10px;
+}
+
+/** Media queries */
+
+@media (max-width: 921px){
+    
+    /** Barra de navegación*/
+
+    .barra-nav li a{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 837px){
+    
+    /** Barra de navegación*/
+
+    .barra-nav li a{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 600px){
+
+    /** Barra de navegación */
+
+    .menu-nav{
+        background: #B0FFEC;
+        height: 25px;
+        width: 100vw;
+        margin: auto;
+        align-items: center;
+        border-bottom: none;
+        box-shadow: none;
+    }
+
+    .barra-nav{
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 250px);
+        background: #287699;
+        top: -1000vh;
+        text-align:left;
+        transition: all .4s;
+        flex-direction: column;
+        margin: -20px 0 0;
+        line-height: 30px;
+        font-size: 20px;
+        padding-bottom: 50px;
+    }
+
+    .barra-nav:hover{
+        background: none;
+    }
+
+    .barra-nav li{
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+
+    .barra-nav li:hover{
+        background: none;
+    }
+
+    .barra-nav li a{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .barra-nav li a:hover{
+        color: #1d526b;
+    }
+
+    /** Botón de manú */
+
+    .boton-menu{
+        display: inline-flex;
+        justify-content: center;
+        border-style: dotted;
+        border-radius: 10px;
+        border-color: #FF758A;
+    }
+
+    /** Imágen */
+
+    .div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagen{
+        width: 350px;
+        height: 370px;
+    }
+
+    /** Información Personal*/
+
+    .sobre-mi{
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+
+    .datos-personales{
+        font-size: x-large;
+    }
+
+    .datos-info{
+        font-size: x-large;
+    }
+
+    .contacto{
+        font-size: x-large;
+    }
+
+    .contacto-info{
+        font-size: x-large;
+    }
+
+    .contacto-linkedin{
+        font-size: x-large;
+    }
+
+    /** Habilidades */
+
+    .hab{
+        text-align: left;
+        font-size: x-large;
+    }
+}
+
+@media (max-width: 400px) {
+    .imagen{
+        width: 250px;
+        height: 270px;
+    }
+
+    /** Tamaño de todos los títulos*/
+
+    .titulo-personal{
+        font-size: x-large;
+        border-width: 2px;
+        width: auto;
+        height: auto;
+    }
+
+    .titulo-experiencia{
+        font-size: x-large;
+        border-width: 2px;
+        width: auto;
+        height: auto;
+        margin-left: calc(100% - 95%);
+    }
+
+    .titulo-formacion{
+        font-size: x-large;
+        border-width: 2px;
+        width: auto;
+        height: auto;
+        margin-left: calc(100% - 95%);
+    }
+
+    .titulo-habilidades{
+        font-size: x-large;
+        border-width: 2px;
+        width: auto;
+        height: auto;
+        margin-left: calc(100% - 95%);
+    }
+
+    .exp-col1{
+        display: block;
+        margin-top: 0;
+        margin: 15px 0px;
+        padding: 0;
+        margin-top: 1px;
+        width: 200px;
+    }
+
+    .exp-col2{
+        display: block;
+        margin-top: 0;
+        margin: 15px 0px;
+        padding: 0;
+        margin-top: 1px;
+        width: 200px;
+    }
+
+    .for-col1{
+        display: block;
+        margin-top: 0;
+        margin: 15px 0px;
+        padding: 0;
+        margin-top: 1px;
+        width: 200px;
+    }
+
+    .for-col2{
+        display: block;
+        margin-top: 0;
+        margin: 15px 0px;
+        padding: 0;
+        margin-top: 1px;
+        width: 200px;
+    }
+
+    .for-col3{
+        display: block;
+        margin-top: 0;
+        margin: 15px 0px;
+        padding: 0;
+        margin-top: 1px;
+        width: 200px;
+    }
+}
